@@ -1,0 +1,55 @@
+
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.5rem;
+}
+
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+}
+
+.header-logo-text {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: white;
+}
+
+.header-nav {
+  display: none; /* Hidden on mobile by default */
+  align-items: center;
+  gap: 1.5rem;
+  color: #9CA3AF;
+}
+
+@media (min-width: 768px) {
+  .header-nav {
+    display: flex; /* Visible on medium screens and up */
+  }
+}
+
+.header-nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.2s;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+}
+
+.header-nav a:hover {
+  color: white;
+}
+
+.header-nav a.active {
+  background-color: #1A1B36;
+  color: white;
+}
